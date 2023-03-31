@@ -1,3 +1,11 @@
+* {
+    --color_h1: #242424;
+    --color_h2: #242424;
+    --color_h3: #242424;
+    --color_b1: #242424;
+    --color_b2: #242424;
+}
+
 body{
-    background-color: #242424;
+    background-color: var(--color_h1);
 }

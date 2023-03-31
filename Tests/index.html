@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redimensionnable Iframe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .iframe-container {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+    .resizable-handle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #007bff;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .bottom {
+      cursor: ns-resize;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .right {
+      cursor: ew-resize;
+      top: 50%;
+      right: -5px;
+      transform: translateY(-50%);
+    }
+  </style>
+  <script>
+    function makeResizable(container, handle, resizeFn) {
+      let isResizing = false;
+      let lastX, lastY;
+
+      handle.addEventListener("mousedown", (e) => {
+        isResizing = true;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        e.preventDefault();
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (!isResizing) return;
+        e.preventDefault();
+        const dx = e.clientX - lastX;
+        const dy = e.clientY - lastY;
+        resizeFn(container, dx, dy);
+        lastX = e.clientX;
+        lastY = e.clientY;
+      });
+
+      document.addEventListener("mouseup", () => {
+        isResizing = false;
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.querySelector(".iframe-container");
+      const handleR = document.querySelector(".right");
+      const handleB = document.querySelector(".bottom");
+
+      makeResizable(container, handleR, (container, dx) => {
+        container.style.width = parseInt(getComputedStyle(container).width) + dx + "px";
+      });
+
+      makeResizable(container, handleB, (container, _, dy) => {
+        container.style.height = parseInt(getComputedStyle(container).height) + dy + "px";
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="iframe-container" style="width: 800px; height: 600px;">
+  <iframe src="https://example.com" style="width: 100%; height: 100%;"></iframe>
+  <div class="resizable-handle bottom"></div>
+  <div class="resizable-handle right"></div>
+</div>
+</body>
+</html>
