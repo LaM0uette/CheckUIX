@@ -1,15 +1,17 @@
 * {
-    --color--h1-dark: #242424;
+    --color--h1-dark: #10191E;
     --color--h2-dark: #FCFCFC;
-    --color--h3-dark: #D2F898;
+    --color--h3-dark: #B0DB6F;
 
     --color--h1-light: #FCFCFC;
-    --color--h2-light: #242424;
-    --color--h3-light: #D2F898;
+    --color--h2-light: #10191E;
+    --color--h3-light: #B0DB6F;
 
     --color--h1: var(--color--h1-dark);
     --color--h2: var(--color--h2-dark);
     --color--h3: var(--color--h3-dark);
+
+    --color--grey: #7A7A7A;
 }
 
 body{
