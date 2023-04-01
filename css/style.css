@@ -23,8 +23,8 @@
     color: var(--color--h2);
 
     animation-name: slide-down;
-    animation-duration: 0.3s;
-    animation-delay: 0.4s;
+    animation-duration: 0.2s;
+    animation-delay: 0.3s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -70,6 +70,20 @@
     border-radius: var(--border-radius--);
     box-shadow: 0 0 10px var(--color--h1);
 }
+    .input-link-url{
+        animation-name: slide-up;
+        animation-duration: 0.3s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    .input-link-file{
+        animation-name: slide-down;
+        animation-duration: 0.3s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
 
 .input-link-label{
     display: inline-block;
@@ -124,8 +138,17 @@
     margin-bottom: 1.3em;
     font-size: 2vmax;
 }
+    .h2-or{
+        animation-name: slide-left;
+        animation-duration: 0.2s;
+        animation-delay: 0.7s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
 
 
+
+/* Test animation */
 @keyframes slide-down {
     from {
         opacity: 0;
@@ -134,5 +157,25 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
