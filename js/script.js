@@ -1,5 +1,4 @@
 const themeToggleButton = document.getElementById("headerSwitchTheme");
-const themeStyle = document.getElementById("themeStyle");
 
 const darkColors = {
     "--color--h1": "#10191E",
