@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/colors.css" id="themeStyle">
+    <link rel="stylesheet" href="css/constants.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/generic.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,14 +31,20 @@
 <div class="url-container">
     <div class="input-link">
         <label for="input-url-link-line-edit" class="input-link-label">URL du site Web :</label><br>
-        <input type="text" id="input-url-link-line-edit" class="input-link-line-edit" placeholder="http(s)://...">
-        <button class="input-link-button">Go !</button>
+        <div class="input-link-group">
+            <input type="text" id="input-url-link-line-edit" class="input-link-line-edit" placeholder="http(s)://...">
+            <button class="input-link-button">Go !</button>
+        </div>
     </div>
+
+    <h2 class="h2-or">Ou</h2>
 
     <div class="input-link">
         <label for="input-file-link-line-edit" class="input-link-label">Fichier .html / .php :</label><br>
-        <input type="text" id="input-file-link-line-edit" class="input-link-line-edit" placeholder="C:\...">
-        <button class="input-link-button">Go !</button>
+        <div class="input-link-group">
+            <input type="text" id="input-file-link-line-edit" class="input-link-line-edit" placeholder="C:\...">
+            <button class="input-link-button">Go !</button>
+        </div>
     </div>
 </div>
 
