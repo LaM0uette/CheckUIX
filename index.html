@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>ResponCheck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>ResponCheck</title>
 </head>
 <body>
+
+<header>
+    <div>
+        <h1>ResponCheck</h1>
+    </div>
+</header>
+
+<div>
+    <div class="inputLink">
+        <label for="inputUrlLinkLineEdit">URL du site Web :</label><br>
+        <input type="text" id="inputUrlLinkLineEdit" class="lineEdit" placeholder="http(s)://...">
+        <button class="linkButton">Go !</button>
+    </div>
+
+    <div class="inputLink">
+        <label for="inputFileLinkLineEdit">Lien vers un fichier .html / .php :</label><br>
+        <input type="text" id="inputFileLinkLineEdit" class="lineEdit" placeholder="C:\...">
+        <button class="linkButton">Go !</button>
+    </div>
+</div>
+
+<footer></footer>
 
 </body>
 </html>
