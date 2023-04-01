@@ -1,9 +1,42 @@
 @import 'fonts.css';
 @import 'generic.css';
 
-.title{
-    font-size: 4em;
+.header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.header-title-container {
+    width: 100%;
     text-align: center;
-    margin: 0.4em;
+}
+
+.header-title{
+    font-size: 4em;
+    margin: 0 auto;
     color: var(--color--h2-dark);
+}
+
+.header-switch-theme{
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    top: 25%;
+    right: 2em;
+    height: 40px;
+    width: 40px;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.header-icon-sun {
+    display: none;
 }
