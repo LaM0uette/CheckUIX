@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('../fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Roboto-Regular';
@@ -18,10 +24,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-family: 'Roboto-MediumItalic';
+    src: url('../fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,6 +34,12 @@
 @font-face {
     font-family: 'Roboto-Black';
     src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-BlackItalic';
+    src: url('../fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
