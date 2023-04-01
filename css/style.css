@@ -61,7 +61,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 0 10px rgba(10, 10, 10, 0.6);
+    border-radius: var(--border-radius--);
+    box-shadow: 0 0 10px var(--color--h1);
 }
 
 .input-link-label{
@@ -83,9 +84,12 @@
     font-size: 1.2vmax;
     line-height: 2.2vw;
     width: 88%;
+    background-color: var(--color--h2);
     color: var(--color--h1);
-
 }
+    .input-link-line-edit::placeholder {
+        color: var(--color--h4);
+    }
 
 .input-link-button{
     border-top-right-radius: var(--border-radius--);

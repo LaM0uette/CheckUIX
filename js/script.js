@@ -3,14 +3,16 @@ const themeStyle = document.getElementById("themeStyle");
 
 const darkColors = {
     "--color--h1": "#10191E",
-    "--color--h2": "#FCFCFC",
-    "--color--h3": "#B0DB6F"
+    "--color--h2": "#EBEBEB",
+    "--color--h3": "#B0DB6F",
+    "--color--h4": "#7A7A7A"
 };
 
 const lightColors = {
-    "--color--h1": "#FCFCFC",
-    "--color--h2": "#10191E",
-    "--color--h3": "#B0DB6F"
+    "--color--h1": "#EBEBEB",
+    "--color--h2": "#243842",
+    "--color--h3": "#B0DB6F",
+    "--color--h4": "#EBEBEB"
 };
 
 function setTheme(theme) {
