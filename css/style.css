@@ -1,3 +1,5 @@
+@import 'fonts.css';
+
 * {
     --color--h1-dark: #10191E;
     --color--h2-dark: #FCFCFC;
@@ -16,5 +18,5 @@
 
 body{
     background-color: var(--color--h1);
-    font-family: "Roboto Light", sans-serif;
+    font-family: "Roboto-Light", sans-serif;
 }
