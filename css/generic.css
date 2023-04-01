@@ -10,8 +10,6 @@
     --color--h1: var(--color--h1-dark);
     --color--h2: var(--color--h2-dark);
     --color--h3: var(--color--h3-dark);
-
-    --color--grey: #7A7A7A;
 }
 
 body{
