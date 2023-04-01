@@ -1,16 +1,4 @@
-* {
-    --color--h1-dark: #10191E;
-    --color--h2-dark: #FCFCFC;
-    --color--h3-dark: #B0DB6F;
-
-    --color--h1-light: #FCFCFC;
-    --color--h2-light: #10191E;
-    --color--h3-light: #B0DB6F;
-
-    --color--h1: var(--color--h1-dark);
-    --color--h2: var(--color--h2-dark);
-    --color--h3: var(--color--h3-dark);
-}
+@import 'colors.css';
 
 body{
     background-color: var(--color--h1);
