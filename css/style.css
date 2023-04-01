@@ -90,6 +90,14 @@
     .input-link-line-edit::placeholder {
         color: var(--color--h4);
     }
+    .input-link-line-edit:focus {
+        outline: none;
+    }
+    .input-link-line-edit::selection {
+        background-color: var(--color--h1);
+        color: var(--color--h2);
+    }
+
 
 .input-link-button{
     border-top-right-radius: var(--border-radius--);
