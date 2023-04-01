@@ -2,6 +2,7 @@
 @import 'fonts.css';
 @import 'generic.css';
 
+/* Header */
 .header-container {
     display: flex;
     align-items: center;
@@ -34,14 +35,18 @@
 }
 
 .header-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .header-icon-sun {
     display: none;
 }
 
-body{
-    background-color: var(--color--h1);
+/* Url links */
+.url-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
 }
