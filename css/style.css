@@ -21,6 +21,12 @@
     margin: 0 auto;
     font-size: 4vmax;
     color: var(--color--h2);
+
+    animation-name: slide-down;
+    animation-duration: 0.3s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .header-switch-theme{
@@ -109,9 +115,24 @@
     background-color: var(--color--h3);
     color: var(--color--h2);
 }
+    .input-link-button:hover{
+        color: var(--color--h1);
+    }
 
 .h2-or{
     margin-top: 1.3em;
     margin-bottom: 1.3em;
     font-size: 2vmax;
+}
+
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,5 +1,9 @@
 @import 'colors.css';
 
+*{
+    transition: color ease-in-out 0.2s;
+}
+
 body{
     background-color: var(--color--h1);
 }
