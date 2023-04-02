@@ -1,0 +1,49 @@
+:root {
+  --color--h1-dark: #0B0F10;
+  --color--h2-dark: #E7F2FA;
+  --color--h3-dark: #2E8DB5;
+  --color--h4-dark: #7A7A7A;
+  --color--h1-light: #E7F2FA;
+  --color--h2-light: #778080;
+  --color--h3-light: #2E8DB5;
+  --color--h4-light: #E7F2FA;
+  --color--h1: #0B0F10;
+  --color--h2: #E7F2FA;
+  --color--h3: #2E8DB5;
+  --color--h4: #7A7A7A;
+}
+
+* {
+  transition: color ease-in-out 0.2s;
+}
+
+body {
+  background-color: var(--color--h1);
+}
+
+h1 {
+  font-family: "Roboto-Black", sans-serif;
+  color: var(--color--h2);
+}
+
+h2 {
+  font-family: "Roboto-Medium", sans-serif;
+  color: var(--color--h2);
+}
+
+h3 {
+  font-family: "Roboto-Regular", sans-serif;
+  color: var(--color--h2);
+}
+
+p {
+  font-family: "Roboto-Light", sans-serif;
+  color: var(--color--h2);
+}
+
+label {
+  font-family: "Roboto-Medium", sans-serif;
+  color: var(--color--h2);
+}
+
+/*# sourceMappingURL=generic.css.map */

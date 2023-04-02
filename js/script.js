@@ -8,10 +8,10 @@ const darkColors = {
 };
 
 const lightColors = {
-    "--color--h1": "#EBEBEB",
-    "--color--h2": "#243842",
-    "--color--h3": "#5FBB97",
-    "--color--h4": "#EBEBEB"
+    "--color--h1": "#E7F2FA",
+    "--color--h2": "#778080",
+    "--color--h3": "#2E8DB5",
+    "--color--h4": "#E7F2FA"
 };
 
 function setTheme(theme) {
