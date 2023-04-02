@@ -1,1 +1,0 @@
-sass css/_style.scss css/_style.css
