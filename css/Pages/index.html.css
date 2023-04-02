@@ -1,7 +1,4 @@
-@import 'colors.css';
-@import 'constants.css';
-@import 'fonts.css';
-@import 'generic.css';
+@import '../_style.css';
 
 /* Header */
 .header-container {
@@ -76,20 +73,20 @@
     border-radius: var(--border-radius--);
     box-shadow: 0 0 10px var(--color--h1);
 }
-    .input-link-url{
-        animation-name: slide-up;
-        animation-duration: 0.3s;
-        animation-delay: 0.4s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-    }
-    .input-link-file{
-        animation-name: slide-down;
-        animation-duration: 0.3s;
-        animation-delay: 0.5s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-    }
+.input-link-url{
+    animation-name: slide-up;
+    animation-duration: 0.3s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.input-link-file{
+    animation-name: slide-down;
+    animation-duration: 0.3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
 .input-link-label{
     display: inline-block;
@@ -113,16 +110,16 @@
     background-color: var(--color--h2);
     color: var(--color--h1);
 }
-    .input-link-line-edit::placeholder {
-        color: var(--color--h4);
-    }
-    .input-link-line-edit:focus {
-        outline: none;
-    }
-    .input-link-line-edit::selection {
-        background-color: var(--color--h1);
-        color: var(--color--h2);
-    }
+.input-link-line-edit::placeholder {
+    color: var(--color--h4);
+}
+.input-link-line-edit:focus {
+    outline: none;
+}
+.input-link-line-edit::selection {
+    background-color: var(--color--h1);
+    color: var(--color--h2);
+}
 
 
 .input-link-button{
@@ -135,9 +132,9 @@
     background-color: var(--color--h3);
     color: var(--color--h2);
 }
-    .input-link-button:hover{
-        color: var(--color--h1);
-    }
+.input-link-button:hover{
+    color: var(--color--h1);
+}
 
 .h2-or{
     margin-top: 1.3em;
@@ -149,47 +146,4 @@
     animation-delay: 0.7s;
     animation-fill-mode: forwards;
     opacity: 0;
-}
-
-
-
-/* Test animation */
-@keyframes slide-down {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes slide-up {
-    from {
-        opacity: 0;
-        transform: translateY(200%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes slide-left {
-    from {
-        opacity: 0;
-        transform: translateX(-200%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes opacity-0-to-1 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
