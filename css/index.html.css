@@ -76,18 +76,14 @@ acronym {
 }
 
 :root {
-  --color--h1-dark: #0B0F10;
-  --color--h2-dark: #E7F2FA;
-  --color--h3-dark: #2E8DB5;
-  --color--h4-dark: #7A7A7A;
-  --color--h1-light: #E7F2FA;
-  --color--h2-light: #778080;
-  --color--h3-light: #2E8DB5;
-  --color--h4-light: #E7F2FA;
-  --color--h1: #0B0F10;
-  --color--h2: #E7F2FA;
-  --color--h3: #2E8DB5;
-  --color--h4: #7A7A7A;
+  --color--h1-first: #2C3E4A;
+  --color--h1-second: #687A7F;
+  --color--h1-third: #AABDB0;
+  --color--h2: #D9DDDF;
+  --color--h3: #21B2DF;
+  --color--green: #49D160;
+  --color--red: #D1495B;
+  --color--yellow: #D1C849;
 }
 
 :root {
@@ -137,18 +133,14 @@ acronym {
   font-style: normal;
 }
 :root {
-  --color--h1-dark: #0B0F10;
-  --color--h2-dark: #E7F2FA;
-  --color--h3-dark: #2E8DB5;
-  --color--h4-dark: #7A7A7A;
-  --color--h1-light: #E7F2FA;
-  --color--h2-light: #778080;
-  --color--h3-light: #2E8DB5;
-  --color--h4-light: #E7F2FA;
-  --color--h1: #0B0F10;
-  --color--h2: #E7F2FA;
-  --color--h3: #2E8DB5;
-  --color--h4: #7A7A7A;
+  --color--h1-first: #2C3E4A;
+  --color--h1-second: #687A7F;
+  --color--h1-third: #AABDB0;
+  --color--h2: #D9DDDF;
+  --color--h3: #21B2DF;
+  --color--green: #49D160;
+  --color--red: #D1495B;
+  --color--yellow: #D1C849;
 }
 
 * {
@@ -156,7 +148,7 @@ acronym {
 }
 
 body {
-  background-color: var(--color--h1);
+  background-color: var(--color--h1-first);
 }
 
 h1 {
@@ -181,7 +173,7 @@ p {
 
 label {
   font-family: "Roboto-Medium", sans-serif;
-  color: var(--color--h2);
+  color: var(--color--h1-third);
 }
 
 @keyframes slide-down {
@@ -291,7 +283,7 @@ label {
   align-items: center;
   text-align: center;
   border-radius: var(--border-radius--);
-  box-shadow: 0 0 10px var(--color--h1);
+  box-shadow: 0 0 10px var(--color--h1-first);
 }
 
 .input-link-url {
@@ -329,8 +321,8 @@ label {
   font-size: 1.2vmax;
   line-height: 2.2vw;
   width: 88%;
-  background-color: var(--color--h2);
-  color: var(--color--h1);
+  background-color: var(--color--h1-second);
+  color: var(--color--h1-first);
 }
 
 .input-link-line-edit::placeholder {
@@ -342,7 +334,7 @@ label {
 }
 
 .input-link-line-edit::selection {
-  background-color: var(--color--h1);
+  background-color: var(--color--h1-first);
   color: var(--color--h2);
 }
 
@@ -354,7 +346,7 @@ label {
   font-size: 1.2vmax;
   width: 12%;
   background-color: var(--color--h3);
-  color: var(--color--h2-dark);
+  color: var(--color--h2);
 }
 
 .input-link-button:hover {

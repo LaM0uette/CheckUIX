@@ -1,17 +1,19 @@
 const themeToggleButton = document.getElementById("headerSwitchTheme");
 
 const darkColors = {
-    "--color--h1": "#0B0F10",
-    "--color--h2": "#E7F2FA",
-    "--color--h3": "#2E8DB5",
-    "--color--h4": "#7A7A7A"
+    "--color--h1-first": "#2C3E4A",
+    "--color--h1-second": "#687A7F",
+    "--color--h1-third": "#AABDB0",
+    "--color--h2": "#D9DDDF",
+    "--color--h3": "#21B2DF",
 };
 
 const lightColors = {
-    "--color--h1": "#E7F2FA",
-    "--color--h2": "#778080",
-    "--color--h3": "#2E8DB5",
-    "--color--h4": "#E7F2FA"
+    "--color--h1-first": "#E0E7E8",
+    "--color--h1-second": "#BDC6C7",
+    "--color--h1-third": "#497462",
+    "--color--h2": "#2C3E4A",
+    "--color--h3": "#21B2DF"
 };
 
 function setTheme(theme) {
