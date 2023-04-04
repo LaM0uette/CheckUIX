@@ -11,15 +11,13 @@
 <body>
 
 <header>
-    <div class="header-container">
-        <div class="header-title-container">
-            <h1 class="header-title">CheckUIX</h1>
+    <div class="header container">
+        <div class="header title-container">
+            <img class="header logo" src="Assets/Svg/Logo/LogoLight.svg" alt="Logo CheckUIX Light">
         </div>
-        <div>
-            <button class="header-switch-theme" id="headerSwitchTheme">
-                <img src="Assets/Svg/moon.svg" alt="Moon" class="header-icon header-icon-moon">
-                <img src="Assets/Svg/sun.svg" alt="Sun" class="header-icon header-icon-sun">
-            </button>
+
+        <div class="header button-container">
+            <?php include 'Components/toggle-dark-mode.php'; ?>
         </div>
     </div>
 </header>

@@ -1,56 +1,33 @@
 @import '_style';
 
 /* Header */
-.header-container {
+.header.container {
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 1em;
     width: 100%;
 }
 
-.header-title-container {
+.header.title-container {
     text-align: center;
-    width: 100%;
+    width: 20vmax;
 }
 
-.header-title{
-    margin: 0 auto;
-    font-size: 4vmax;
-    color: var(--color--h2);
-
-    animation-name: slide-down;
-    animation-duration: 0.2s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-.header-switch-theme{
+.header.button-container {
     position: absolute;
-    top: 25%;
-    right: 2em;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-
-    animation-name: opacity-0-to-1;
-    animation-duration: 0.8s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    top: 50%;
+    right: 3vmax;
+    transform: translateY(-50%);
 }
 
-.header-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.header-icon-sun {
-    display: none;
+.header.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Url links */
