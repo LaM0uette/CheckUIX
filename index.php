@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.html.css">
     <script defer src="js/script.js"></script>
-    <link rel="icon" type="image/svg+xml" href="Docs/Logo/Logo.svg">
+    <link rel="icon" type="image/svg+xml" href="docs/Logo/Logo.svg">
     <title>CheckUIX</title>
 </head>
 <body>

@@ -105,10 +105,10 @@
 
     function setLogo(theme) {
         if (theme === "dark") {
-            logo.setAttribute("src", "Assets/Svg/Logo/LogoLight.svg");
+            logo.setAttribute("src", "assets/svg/logo/LogoLight.svg");
             logo.setAttribute("alt", "Logo CheckUIX Light");
         } else {
-            logo.setAttribute("src", "Assets/Svg/Logo/LogoDark.svg");
+            logo.setAttribute("src", "assets/svg/logo/LogoDark.svg");
             logo.setAttribute("alt", "Logo CheckUIX Dark");
         }
     }
