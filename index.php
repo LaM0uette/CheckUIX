@@ -17,12 +17,7 @@
         </div>
 
         <div class="header button-container">
-            <div class="toggle-dark-mode">
-                <label class="toggle-label">
-                    <input type="checkbox" class="toggle-checkbox" id="toggleDarkModeSwitch">
-                    <span class="toggle-slider"></span>
-                </label>
-            </div>
+            <?php include 'Components/toggle-dark-mode.php'; ?>
         </div>
     </div>
 </header>
