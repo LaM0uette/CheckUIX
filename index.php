@@ -10,17 +10,9 @@
 </head>
 <body>
 
-<header>
-    <div class="header container">
-        <div class="header title-container">
-            <img class="header logo" src="Assets/Svg/Logo/LogoLight.svg" alt="Logo CheckUIX Light">
-        </div>
+<!--Main header-->
+<?php include 'Components/header-main-container.php'; ?>
 
-        <div class="header button-container">
-            <?php include 'Components/toggle-dark-mode.php'; ?>
-        </div>
-    </div>
-</header>
 <footer></footer>
 
 </body>
