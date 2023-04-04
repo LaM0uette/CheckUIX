@@ -32,11 +32,11 @@
 <header>
     <div class="header main-container">
         <div class="header title-main-container">
-            <img class="header logo" src="../Assets/Svg/Logo/LogoLight.svg" alt="Logo CheckUIX Light">
+            <img class="header logo" src="/Assets/Svg/Logo/LogoLight.svg" alt="Logo CheckUIX Light">
         </div>
 
         <div class="header button-main-container">
-            <?php include 'Components/toggle-dark-mode.php'; ?>
+            <?php include 'components/buttons/toggle-dark-mode.php'; ?>
         </div>
     </div>
 </header>
