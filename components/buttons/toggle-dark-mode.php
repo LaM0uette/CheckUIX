@@ -3,6 +3,12 @@
         position: relative;
         width: 60px;
         height: 30px;
+
+        animation-name: slide-right;
+        animation-duration: 0.3s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
 
     .toggle-label {

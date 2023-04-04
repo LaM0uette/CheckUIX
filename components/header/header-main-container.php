@@ -11,6 +11,12 @@
     .header.title-main-container {
         text-align: center;
         width: 20vmax;
+
+        animation-name: slide-down;
+        animation-duration: 0.2s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
 
     .header.button-main-container {
