@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web application that allows you to test the responsive design of your websites. It also provides tools to generate or verify certain CSS properties, such as ensuring proper color contrast.">
-    <title>CheckUIX - Responsive and ToolBox CSS</title>
+    <meta name="description" content="Application web qui vous permet de tester le responsive design de vos sites web. Il fournit également des outils pour générer ou vérifier certaines propriétés CSS, telles que la garantie d'un contraste de couleur approprié.">
+    <title>CheckUIX - Responsive et ToolBox CSS</title>
     <link rel="stylesheet" href="css/index.html.css">
     <script defer src="js/script.js"></script>
     <link rel="icon" type="image/svg+xml" href="docs/Logo/Logo.svg">
@@ -20,8 +20,9 @@
             <li class="nav-menu-item">
                 <a href="responsiveMenu.php">
                     <?php
-                    $svgName = 'responsive';
-                    $description = "Outil permettant de tester le responsive de son site à l'aide de pré-réglages prêts à l'emploi.";
+                    $menuItemSvgName = 'responsive';
+                    $menuItemTitle = 'Responsive design';
+                    $menuItemDescription = "Outil permettant de tester le responsive de son site à l'aide de pré-réglages prêts à l'emploi.";
                     include 'components/buttons/menu-item-link.php'; ?>
                 </a>
             </li>
@@ -29,8 +30,9 @@
             <li class="nav-menu-item">
                 <a href="responsiveMenu.php">
                     <?php
-                    $svgName = 'colors';
-                    $description = "";
+                    $menuItemSvgName = 'colors';
+                    $menuItemTitle = 'Couleurs';
+                    $menuItemDescription = "";
                     include 'components/buttons/menu-item-link.php';
                     ?>
                 </a>
@@ -39,8 +41,9 @@
             <li class="nav-menu-item">
                 <a href="responsiveMenu.php">
                     <?php
-                    $svgName = 'toolBox';
-                    $description = "";
+                    $menuItemSvgName = 'toolBox';
+                    $menuItemTitle = 'ToolBox';
+                    $menuItemDescription = "";
                     include 'components/buttons/menu-item-link.php';
                     ?>
                 </a>
@@ -49,8 +52,9 @@
             <li class="nav-menu-item">
                 <a href="responsiveMenu.php">
                     <?php
-                    $svgName = 'check';
-                    $description = "";
+                    $menuItemSvgName = 'check';
+                    $menuItemTitle = 'UIX Check';
+                    $menuItemDescription = "";
                     include 'components/buttons/menu-item-link.php';
                     ?>
                 </a>

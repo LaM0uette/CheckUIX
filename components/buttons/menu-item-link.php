@@ -89,16 +89,17 @@
 
 <div class="menu-item-link-container">
     <?php
-    if (!isset($svgName)) { $svgName = ''; }
-    if (!isset($description)) { $description = ''; }
+    if (!isset($menuItemSvgName)) { $menuItemSvgName = ''; }
+    if (!isset($menuItemTitle)) { $menuItemTitle = ''; }
+    if (!isset($menuItemDescription)) { $menuItemDescription = ''; }
     ?>
-    <img class="menu-item-link-img" src="assets/svg/menuItems/<?php echo $svgName; ?>.svg" alt="<?php echo $svgName; ?> Icon">
+    <img class="menu-item-link-img" src="assets/svg/menuItems/<?php echo $menuItemSvgName; ?>.svg" alt="<?php echo $menuItemSvgName; ?> Icon">
 
     <div class="menu-item-link-vertical-line"></div>
 
     <div class="menu-item-link-title-container">
-        <h2 class="menu-item-link-title"><?php echo ucfirst($svgName); ?></h2>
-        <p class="menu-item-link-description"><?php echo $description; ?></p>
+        <h2 class="menu-item-link-title"><?php echo ucfirst($menuItemTitle); ?></h2>
+        <p class="menu-item-link-description"><?php echo $menuItemDescription; ?></p>
     </div>
 </div>
 
