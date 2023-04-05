@@ -75,6 +75,10 @@ acronym {
   border: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --color--h1-first: #2C3E4A;
   --color--h1-second: #687A7F;
@@ -90,6 +94,8 @@ acronym {
   --border--h1: 0.2vmax;
   --border--radius-h1: 1vmax;
   --border--radius-hx: 0.2vmax;
+  --font-size--h2: 2vmax;
+  --font-size--p: 1vmax;
 }
 
 .debug-black {
