@@ -3,8 +3,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30vmax;
-        height: 7vmax;
+        width: 35vmax;
+        height: 6.5vmax;
         border: 3px solid var(--color--h2);
         border-radius: var(--border--radius-big);
     }
