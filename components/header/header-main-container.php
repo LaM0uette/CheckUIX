@@ -4,8 +4,8 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        margin-top: 1em;
         width: 100%;
+        height: 15vh;
     }
 
     .header.title-main-container {

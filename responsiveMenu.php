@@ -11,7 +11,7 @@
 <body>
 
 <!--Main header-->
-<?php include 'components/header/header-main-container.php'; ?>
+<a href="index.php"><?php include 'components/header/header-main-container.php'; ?></a>
 
 <div class="url-container">
     <div class="input-link input-link-url">

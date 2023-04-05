@@ -356,5 +356,23 @@ label {
     opacity: 1;
   }
 }
+.nav-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.nav-menu-item.item-1 {
+  width: 12em;
+  height: 12em;
+}
 
 /*# sourceMappingURL=index.html.css.map */
