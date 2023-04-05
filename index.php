@@ -24,7 +24,6 @@
     </nav>
 </div>
 
-
 <footer></footer>
 
 </body>
