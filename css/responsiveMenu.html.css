@@ -94,7 +94,7 @@ a {
   --border--h1: 0.2vmax;
   --border--radius-h1: 1vmax;
   --border--radius-hx: 0.2vmax;
-  --font-size--h2: 2vmax;
+  --font-size--h2: 1.8vmax;
   --font-size--p: 1vmax;
 }
 
@@ -284,7 +284,7 @@ a {
 }
 
 * {
-  transition: color ease-in-out 0.2s;
+  transition: color, background-color ease-in-out 0.2s;
 }
 
 body {
