@@ -16,13 +16,14 @@
 <div class="nav-menu-container">
     <nav>
         <ul class="nav-menu">
-            <li class="nav-menu-item item-1"><a href="responsiveMenu.php"><?php $svgPath = 'assets/svg/menuItems/responsive.svg'; include 'components/buttons/menu-item-link.php'; ?></a></li>
-            <li class="nav-menu-item item-2"><a href="responsiveMenu.php"><?php $svgPath = ''; include 'components/buttons/menu-item-link.php'; ?></a></li>
-            <li class="nav-menu-item item-3"><a href="responsiveMenu.php"><?php $svgPath = ''; include 'components/buttons/menu-item-link.php'; ?></a></li>
-            <li class="nav-menu-item item-4"><a href="responsiveMenu.php"><?php $svgPath = ''; include 'components/buttons/menu-item-link.php'; ?></a></li>
+            <li class="nav-menu-item item-1"><a href="responsiveMenu.php"><?php $svgName = 'responsive'; include 'components/buttons/menu-item-link.php'; ?></a></li>
+            <li class="nav-menu-item item-2"><a href="responsiveMenu.php"><?php $svgName = 'colors'; include 'components/buttons/menu-item-link.php'; ?></a></li>
+            <li class="nav-menu-item item-3"><a href="responsiveMenu.php"><?php $svgName = 'toolBox'; include 'components/buttons/menu-item-link.php'; ?></a></li>
+            <li class="nav-menu-item item-4"><a href="responsiveMenu.php"><?php $svgName = 'check'; include 'components/buttons/menu-item-link.php'; ?></a></li>
         </ul>
     </nav>
 </div>
+
 
 <footer></footer>
 
