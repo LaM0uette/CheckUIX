@@ -1,29 +1,42 @@
 <style>
     .container{
-        width: 13vmax;
-        height: 13vmax;
-        border: 2px solid var(--color--h2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vmax;
+        height: 7vmax;
+        border: 3px solid var(--color--h2);
         border-radius: var(--border--radius-big);
+    }
+
+    .container:hover{
+        background-color: var(--color--h2);
+        cursor: pointer;
+    }
+
+    svg{
+        width: 65%;
+        height: 65%;
     }
 
     .st0 {
         fill: var(--color--h2);
     }
     .st1 {
-        fill: var(--color--h1-first);
+        fill: var(--color--h2);
     }
     .st2 {
-        fill: var(--color--h2);
+        fill: var(--color--h1-first);
     }
 
-    svg:hover .st0 {
-        fill: var(--color--h2);
-    }
-    svg:hover .st1 {
-        fill: var(--color--h2);
-    }
-    svg:hover .st2 {
+    .container:hover .st0 {
         fill: var(--color--h1-first);
+    }
+    .container:hover .st1 {
+        fill: var(--color--h1-first);
+    }
+    .container:hover .st2 {
+        fill: var(--color--h2);
     }
 
 </style>

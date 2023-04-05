@@ -1,15 +1,22 @@
 @import '_style';
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .nav-menu-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 84vh;
+  flex-grow: 1;
 }
 
 .nav-menu{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 4vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
 }
