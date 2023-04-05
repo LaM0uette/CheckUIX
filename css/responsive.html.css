@@ -87,8 +87,9 @@ acronym {
 }
 
 :root {
-  --border--radius: 5px;
-  --border--radius-big: 30px;
+  --border--h1: 0.2vmax;
+  --border--radius-h1: 1vmax;
+  --border--radius-hx: 0.2vmax;
 }
 
 .debug-black {
