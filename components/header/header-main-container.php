@@ -38,7 +38,9 @@
 <header>
     <div class="header main-container">
         <div class="header title-main-container">
-            <img class="header logo" src="/assets/svg/logo/LogoLight.svg" alt="Logo CheckUIX Light">
+            <h1>
+                <img class="header logo" src="/assets/svg/logo/LogoLight.svg" alt="CheckUIX">
+            </h1>
         </div>
 
         <div class="header button-main-container">
