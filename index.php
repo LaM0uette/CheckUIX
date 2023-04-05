@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web application that allows you to test the responsive design of your websites. It also provides tools to generate or verify certain CSS properties, such as ensuring proper color contrast.">
+    <title>CheckUIX - Responsive and ToolBox CSS</title>
     <link rel="stylesheet" href="css/index.html.css">
     <script defer src="js/script.js"></script>
     <link rel="icon" type="image/svg+xml" href="docs/Logo/Logo.svg">
-    <title>CheckUIX</title>
 </head>
 <body>
 
