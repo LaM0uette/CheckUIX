@@ -284,7 +284,7 @@ a {
 }
 
 * {
-  transition: color, background-color ease-in-out 0.2s;
+  transition: color, background-color, border-color ease-in-out 0.2s;
 }
 
 body {

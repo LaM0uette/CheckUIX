@@ -58,6 +58,33 @@
         font-size: var(--font-size--p);
         color: var(--color--h2);
     }
+
+    @media screen and (max-width: 1500px) {
+        .menu-item-link-container{
+            height: 10vmax;
+        }
+
+        .menu-item-link-title {
+            font-size: calc(var(--font-size--h2) * 1.3);
+        }
+
+        .menu-item-link-description {
+            font-size: calc(var(--font-size--p) * 1.3);
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .menu-item-link-container{
+            height: 14vmax;
+        }
+
+        .menu-item-link-title {
+            font-size: calc(var(--font-size--h2) * 1.3);
+        }
+
+        .menu-item-link-description {
+            font-size: calc(var(--font-size--p) * 1.6);
+        }
+    }
 </style>
 
 <div class="menu-item-link-container">
