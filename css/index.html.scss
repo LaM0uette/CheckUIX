@@ -20,6 +20,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4vh;
+  overflow: hidden;
+}
+
+.nav-menu-item{
+  overflow: hidden;
 }
 
 .nav-menu-item:nth-child(1){
