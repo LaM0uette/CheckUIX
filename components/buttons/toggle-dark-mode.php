@@ -4,7 +4,7 @@
         width: 60px;
         height: 30px;
 
-        animation-name: slide-right;
+        animation-name: slide-down;
         animation-duration: 0.3s;
         animation-delay: 0.4s;
         animation-fill-mode: forwards;
