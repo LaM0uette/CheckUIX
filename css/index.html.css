@@ -87,7 +87,8 @@ acronym {
 }
 
 :root {
-  --border-radius--: 5px;
+  --border--radius: 5px;
+  --border--radius-big: 30px;
 }
 
 .debug-black {
@@ -367,12 +368,7 @@ label {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.nav-menu-item.item-1 {
-  width: 12em;
-  height: 12em;
+  gap: 4vmax;
 }
 
 /*# sourceMappingURL=index.html.css.map */

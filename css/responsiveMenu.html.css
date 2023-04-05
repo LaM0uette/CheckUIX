@@ -87,7 +87,8 @@ acronym {
 }
 
 :root {
-  --border-radius--: 5px;
+  --border--radius: 5px;
+  --border--radius-big: 30px;
 }
 
 .debug-black {
@@ -373,7 +374,7 @@ label {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: var(--border-radius--);
+  border-radius: var(--border--radius);
   box-shadow: 0 0 10px var(--color--h1-first);
 }
 
@@ -406,8 +407,8 @@ label {
 }
 
 .input-link-line-edit {
-  border-top-left-radius: var(--border-radius--);
-  border-bottom-left-radius: var(--border-radius--);
+  border-top-left-radius: var(--border--radius);
+  border-bottom-left-radius: var(--border--radius);
   padding-left: 0.4em;
   font-size: 1.2vmax;
   line-height: 2.2vw;
@@ -430,8 +431,8 @@ label {
 }
 
 .input-link-button {
-  border-top-right-radius: var(--border-radius--);
-  border-bottom-right-radius: var(--border-radius--);
+  border-top-right-radius: var(--border--radius);
+  border-bottom-right-radius: var(--border--radius);
   cursor: pointer;
   font-family: Roboto-Black, sans-serif;
   font-size: 1.2vmax;
