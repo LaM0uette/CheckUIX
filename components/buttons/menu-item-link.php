@@ -7,14 +7,25 @@
     }
 
     .st0 {
-        fill: var(--color--h1-first);
+        fill: var(--color--h2);
     }
     .st1 {
-        fill: var(--color--h1-second);
+        fill: var(--color--h1-first);
     }
     .st2 {
         fill: var(--color--h2);
     }
+
+    svg:hover .st0 {
+        fill: var(--color--h2);
+    }
+    svg:hover .st1 {
+        fill: var(--color--h2);
+    }
+    svg:hover .st2 {
+        fill: var(--color--h1-first);
+    }
+
 </style>
 
 <div class="container">
