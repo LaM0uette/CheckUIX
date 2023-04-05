@@ -17,9 +17,9 @@
     }
 
     .menu-item-link-img{
-        margin-left: 0.6vw;
-        margin-right: 0.6vw;
-        height: 80%;
+        margin-left: 0.8vmax;
+        margin-right: 0.8vmax;
+        height: 75%;
     }
 
     /* Container vertical line */
