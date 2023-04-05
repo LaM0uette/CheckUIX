@@ -17,10 +17,44 @@
 <div class="nav-menu-container">
     <nav>
         <ul class="nav-menu">
-            <li class="nav-menu-item"><a href="responsiveMenu.php"><?php $svgName = 'responsive'; include 'components/buttons/menu-item-link.php'; ?></a></li>
-            <li class="nav-menu-item"><a href="responsiveMenu.php"><?php $svgName = 'colors'; include 'components/buttons/menu-item-link.php'; ?></a></li>
-            <li class="nav-menu-item"><a href="responsiveMenu.php"><?php $svgName = 'toolBox'; include 'components/buttons/menu-item-link.php'; ?></a></li>
-            <li class="nav-menu-item"><a href="responsiveMenu.php"><?php $svgName = 'check'; include 'components/buttons/menu-item-link.php'; ?></a></li>
+            <li class="nav-menu-item">
+                <a href="responsiveMenu.php">
+                    <?php
+                    $svgName = 'responsive';
+                    $description = "Outil permettant de tester le responsive de son site à l'aide de pré-réglages prêts à l'emploi.";
+                    include 'components/buttons/menu-item-link.php'; ?>
+                </a>
+            </li>
+
+            <li class="nav-menu-item">
+                <a href="responsiveMenu.php">
+                    <?php
+                    $svgName = 'colors';
+                    $description = "";
+                    include 'components/buttons/menu-item-link.php';
+                    ?>
+                </a>
+            </li>
+
+            <li class="nav-menu-item">
+                <a href="responsiveMenu.php">
+                    <?php
+                    $svgName = 'toolBox';
+                    $description = "";
+                    include 'components/buttons/menu-item-link.php';
+                    ?>
+                </a>
+            </li>
+
+            <li class="nav-menu-item">
+                <a href="responsiveMenu.php">
+                    <?php
+                    $svgName = 'check';
+                    $description = "";
+                    include 'components/buttons/menu-item-link.php';
+                    ?>
+                </a>
+            </li>
         </ul>
     </nav>
 </div>

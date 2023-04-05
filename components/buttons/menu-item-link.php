@@ -88,14 +88,17 @@
 </style>
 
 <div class="menu-item-link-container">
-    <?php if (!isset($svgName)) { $svgName = ''; } ?>
+    <?php
+    if (!isset($svgName)) { $svgName = ''; }
+    if (!isset($description)) { $description = ''; }
+    ?>
     <img class="menu-item-link-img" src="assets/svg/menuItems/<?php echo $svgName; ?>.svg" alt="<?php echo $svgName; ?> Icon">
 
     <div class="menu-item-link-vertical-line"></div>
 
     <div class="menu-item-link-title-container">
         <h2 class="menu-item-link-title"><?php echo ucfirst($svgName); ?></h2>
-        <p class="menu-item-link-description">Outil permettant de tester le responsive de son site à l'aide de pré-réglages prêts à l'emploi.</p>
+        <p class="menu-item-link-description"><?php echo $description; ?></p>
     </div>
 </div>
 
