@@ -1,11 +1,5 @@
 @import 'colors.scss';
 
-*{
-    transition: color .2s ease-in-out,
-                background-color .2s ease-in-out,
-                border-color .2s ease-in-out;
-}
-
 body{
     background-color: var(--color--h1-first);
 }
@@ -26,8 +20,13 @@ p{
     font-family: "Lato-Light", sans-serif;
     color: var(--color--h2);
 }
-
 label{
     font-family: "Lato-Bold", sans-serif;
     color: var(--color--h1-third);
+}
+
+div, h2{
+    transition: color .2s ease-in-out,
+    background-color .2s ease-in-out,
+    border-color .2s ease-in-out;
 }

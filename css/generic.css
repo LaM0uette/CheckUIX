@@ -9,10 +9,6 @@
   --color--yellow: #D1C849;
 }
 
-* {
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-}
-
 body {
   background-color: var(--color--h1-first);
 }
@@ -40,6 +36,10 @@ p {
 label {
   font-family: "Lato-Bold", sans-serif;
   color: var(--color--h1-third);
+}
+
+div, h2 {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 /*# sourceMappingURL=generic.css.map */
