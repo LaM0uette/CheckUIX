@@ -1,7 +1,9 @@
 @import 'colors.scss';
 
 *{
-    transition: color, background-color, border-color ease-in-out 0.2s;
+    transition: color .2s ease-in-out,
+                background-color .2s ease-in-out,
+                border-color .2s ease-in-out;
 }
 
 body{

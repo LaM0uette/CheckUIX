@@ -13,8 +13,8 @@
         width: 20vmax;
 
         animation-name: slide-down;
-        animation-duration: 0.2s;
-        animation-delay: 0.3s;
+        animation-duration: 0.3s;
+        animation-delay: 0.5s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
