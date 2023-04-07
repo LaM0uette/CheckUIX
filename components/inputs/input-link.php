@@ -112,9 +112,9 @@ if ($inputLinkType == "file") {
             });
 
             document.getElementById("input-link-file").addEventListener("change", function () {
-                document.getElementById("input-link-line-edit-" + inputLinkType).value = this.value;
-                
                 const fileInput = document.getElementById("input-link-file");
+                
+                document.getElementById("input-link-line-edit-" + inputLinkType).value = fileInput.value;
 
                 if (fileInput.files.length > 0) {
                     const file = fileInput.files[0];

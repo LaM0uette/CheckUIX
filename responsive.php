@@ -10,7 +10,7 @@ if (isset($_POST['input-link-line-edit']) && isset($_POST['input-link-type'])) {
 if (isset($_POST['input-link-line-edit']) && $_POST['input-link-line-edit'] == "") {
     $inputLinkUrl = "https://doriandevillele.fr"; $inputLinkType = "url"; }
 
-$inputLinkFile = isset($_POST['fileDataUrl']) ? $_POST['fileDataUrl'] : '';
+$inputLinkFile = $_POST['fileDataUrl'] ?? "";
 ?>
 
 <!DOCTYPE html>
