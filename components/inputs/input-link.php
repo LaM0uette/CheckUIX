@@ -83,19 +83,23 @@ if (!isset($inputLinkButton)) { $inputLinkButton = "Go !"; }
 if (!isset($inputLinkType)) { $inputLinkType = "url"; }
 ?>
 
-<label class="input-link-label" for="input-link-line-edit-<?php echo $inputLinkType ?>"><?php echo $inputLinkLabel ?></label>
-<div class="input-link-group">
-    <div class="input-link-input-container">
-        <input type="text" id="input-link-line-edit-<?php echo $inputLinkType ?>" class="input-link-line-edit" placeholder=<?php echo $inputLinkPlaceholder ?>>
-        <?php if ($inputLinkType == "file") {
-            echo '<button class="input-link-file-button" id="inputLinkFileButton">
+<form action="/responsive.php" method="post">
+    <label class="input-link-label" for="input-link-line-edit-<?php echo $inputLinkType ?>"><?php echo $inputLinkLabel ?></label>
+    <div class="input-link-group">
+        <div class="input-link-input-container">
+            <input type="text" id="input-link-line-edit-<?php echo $inputLinkType ?>" name="input-link-line-edit" class="input-link-line-edit" placeholder=<?php echo $inputLinkPlaceholder ?>>
+            <?php if ($inputLinkType == "file") {
+                echo '<button type="button" class="input-link-file-button" id="inputLinkFileButton">
             <img src="/assets/svg/utils/file.svg" alt="Open file">
         </button>';
-        } ?>
+            } ?>
+        </div>
+
+        <input type="file" id="input-link-file" style="display:none">
+        <input type="hidden" name="input-link-type" value="<?php echo htmlspecialchars($inputLinkType); ?>">
+        <button type="submit" class="input-link-button"><?php echo $inputLinkButton ?></button>
     </div>
-    <input type="file" id="input-link-file" style="display:none">
-    <button class="input-link-button" onclick="window.location.href='/responsive.html'"><?php echo $inputLinkButton ?></button>
-</div>
+</form>
 
 <?php
 if ($inputLinkType == "file") {
@@ -112,3 +116,4 @@ if ($inputLinkType == "file") {
         </script>';
 }
 ?>
+

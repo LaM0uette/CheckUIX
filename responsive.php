@@ -1,3 +1,13 @@
+<?php
+if (isset($_POST['input-link-line-edit']) && isset($_POST['input-link-type'])) {
+    $inputLinkUrl = $_POST['input-link-line-edit'];
+    $inputLinkType = $_POST['input-link-type'];
+
+    echo "La valeur du champ 1 est : " . $inputLinkUrl . "<br>";
+    echo "La valeur du champ 2 est : " . $inputLinkType;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,6 +19,6 @@
     <title>CheckUIX</title>
 </head>
 <body>
-
+<button>Test</button>
 </body>
 </html>
