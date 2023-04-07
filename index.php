@@ -14,7 +14,7 @@
 <!--Main header-->
 <?php include 'components/header/header-main-container.php'; ?>
 
-<div class="nav-menu-container">
+<main class="nav-menu-container">
     <nav>
         <ul class="nav-menu">
             <li class="nav-menu-item">
@@ -61,7 +61,7 @@
             </li>
         </ul>
     </nav>
-</div>
+</main>
 
 <footer></footer>
 

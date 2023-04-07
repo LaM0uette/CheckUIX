@@ -35,16 +35,14 @@
     }
 </style>
 
-<header>
-    <div class="header main-container">
-        <div class="header title-main-container">
-            <h1>
-                <img class="header logo" src="/assets/svg/logo/LogoLight.svg" alt="CheckUIX">
-            </h1>
-        </div>
+<header class="header main-container">
+    <div class="header title-main-container">
+        <h1>
+            <img class="header logo" src="/assets/svg/logo/LogoLight.svg" alt="CheckUIX">
+        </h1>
+    </div>
 
-        <div class="header button-main-container">
-            <?php include 'components/buttons/toggle-dark-mode.php'; ?>
-        </div>
+    <div class="header button-main-container">
+        <?php include 'components/buttons/toggle-dark-mode.php'; ?>
     </div>
 </header>
