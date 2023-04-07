@@ -8,78 +8,8 @@
     margin-top: 11vmax;
 }
 
-.input-link{
-    width: 50%;
-}
-
-.input-link-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: var(--border--radius-hx);
-    box-shadow: 0 0 10px var(--color--h1-first);
-}
-.input-link-url{
-    animation-name: slide-up;
-    animation-duration: 0.3s;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-.input-link-file{
-    animation-name: slide-down;
-    animation-duration: 0.3s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-.input-link-label{
-    display: inline-block;
-    margin-bottom: 0.1em;
-    font-size: 1.3vmax;
-}
-
-.input-link-line-edit, .input-link-button{
-    border: none;
-    min-height: 25px;
-    height: 2.2vmax;
-}
-
-.input-link-line-edit{
-    border-top-left-radius: var(--border--radius-hx);
-    border-bottom-left-radius: var(--border--radius-hx);
-    padding-left: 0.4em;
-    font-size: 1.2vmax;
-    line-height: 2.2vw;
-    width: 88%;
-    background-color: var(--color--h1-second);
-    color: var(--color--h1-first);
-}
-.input-link-line-edit::placeholder {
-    color: var(--color--h4);
-}
-.input-link-line-edit:focus {
-    outline: none;
-}
-.input-link-line-edit::selection {
-    background-color: var(--color--h1-first);
-    color: var(--color--h2);
-}
-
-.input-link-button{
-    border-top-right-radius: var(--border--radius-hx);
-    border-bottom-right-radius: var(--border--radius-hx);
-    cursor: pointer;
-    font-family: Roboto-Black, sans-serif;
-    font-size: 1.2vmax;
-    width: 12%;
-    background-color: var(--color--h3);
-    color: var(--color--h2);
-}
-.input-link-button:hover{
-    color: var(--color--h1);
+.url-link{
+    width: 50vw;
 }
 
 .h2-or{
@@ -92,4 +22,22 @@
     animation-delay: 0.7s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .url-link{
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .url-link{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .url-link{
+        width: 90vw;
+    }
 }

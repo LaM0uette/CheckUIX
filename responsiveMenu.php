@@ -14,24 +14,21 @@
 <a href="index.php"><?php include 'components/header/header-main-container.php'; ?></a>
 
 <div class="url-container">
-    <div class="input-link input-link-url">
-        <label for="input-url-link-line-edit" class="input-link-label">URL du site Web :</label><br>
-        <div class="input-link-group">
-            <input type="text" id="input-url-link-line-edit" class="input-link-line-edit" placeholder="http(s)://...">
-            <input type="file" id="fileInput" style="display:none">
-            <button type="button" class="input-link-button"  id="browseFileButton">Go !</button>
-        </div>
+
+    <div class="url-link">
+        <?php include 'components/inputs/input-link.php'; ?>
     </div>
 
     <h2 class="h2-or">Ou</h2>
 
-    <div class="input-link input-link-file">
-        <label for="input-file-link-line-edit" class="input-link-label">Fichier .html / .php :</label><br>
-        <div class="input-link-group">
-            <input type="text" id="input-file-link-line-edit" class="input-link-line-edit" placeholder="C:\...">
-            <button class="input-link-button" onclick="window.location.href='responsive.html'">Go !</button>
-        </div>
+    <div class="url-link">
+        <?php
+        $inputLinkLabel = "Fichier .html / .php :";
+        $inputLinkPlaceholder = "C:\\...";
+        $inputLinkType = "file";
+        include 'components/inputs/input-link.php'; ?>
     </div>
+
 </div>
 
 <footer></footer>
