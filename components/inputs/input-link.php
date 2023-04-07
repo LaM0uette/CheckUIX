@@ -83,7 +83,7 @@ if (!isset($inputLinkButton)) { $inputLinkButton = "Go !"; }
 if (!isset($inputLinkType)) { $inputLinkType = "url"; }
 ?>
 
-<form action="/responsive.php" method="post">
+<form action="/responsive.php" method="post" enctype="multipart/form-data">
     <label class="input-link-label" for="input-link-line-edit-<?php echo $inputLinkType ?>"><?php echo $inputLinkLabel ?></label>
     <div class="input-link-group">
         <div class="input-link-input-container">
@@ -96,6 +96,7 @@ if (!isset($inputLinkType)) { $inputLinkType = "url"; }
         </div>
 
         <input type="file" id="input-link-file" style="display:none">
+        <input type="hidden" id="fileDataUrl" name="fileDataUrl">
         <input type="hidden" name="input-link-type" value="<?php echo htmlspecialchars($inputLinkType); ?>">
         <button type="submit" class="input-link-button"><?php echo $inputLinkButton ?></button>
     </div>
@@ -112,6 +113,21 @@ if ($inputLinkType == "file") {
 
             document.getElementById("input-link-file").addEventListener("change", function () {
                 document.getElementById("input-link-line-edit-" + inputLinkType).value = this.value;
+                
+                const fileInput = document.getElementById("input-link-file");
+
+                if (fileInput.files.length > 0) {
+                    const file = fileInput.files[0];
+                    const reader = new FileReader();
+
+                    reader.onload = function (event) {
+                        sessionStorage.setItem("fileDataUrl", event.target.result);
+                    };
+
+                    reader.readAsDataURL(file);
+                } else {
+                    sessionStorage.removeItem("fileDataUrl");
+                }
             });
         </script>';
 }
