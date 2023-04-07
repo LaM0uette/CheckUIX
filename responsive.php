@@ -2,13 +2,15 @@
 if (isset($_POST['input-link-line-edit']) && isset($_POST['input-link-type'])) {
     $inputLinkUrl = $_POST['input-link-line-edit'];
     $inputLinkType = $_POST['input-link-type'];
-
-    echo "La valeur du champ 1 est : " . $inputLinkUrl . "<br>";
-    echo "La valeur du champ 2 est : " . $inputLinkType;
 }else{
     $inputLinkUrl = "https://doriandevillele.fr";
     $inputLinkType = "url";
 }
+
+if ($_POST['input-link-line-edit'] == "") { $inputLinkUrl = "https://doriandevillele.fr"; $inputLinkType = "url"; }
+
+echo "La valeur du champ 1 est : " . $inputLinkUrl . "<br>";
+echo "La valeur du champ 2 est : " . $inputLinkType;
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +23,9 @@ if (isset($_POST['input-link-line-edit']) && isset($_POST['input-link-type'])) {
     <link rel="icon" type="image/svg+xml" href="docs/Logo/Logo.svg">
     <title>CheckUIX</title>
 </head>
+
 <body>
-<button>Test</button>
+
 </body>
+
 </html>
