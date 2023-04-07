@@ -26,7 +26,7 @@
                     include 'components/buttons/menu-item-link.php'; ?>
                 </a>
             </li>
-
+<!--
             <li class="nav-menu-item">
                 <a href="responsiveMenu.php">
                     <?php
@@ -59,6 +59,7 @@
                     ?>
                 </a>
             </li>
+-->
         </ul>
     </nav>
 </main>

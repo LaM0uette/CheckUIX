@@ -18,7 +18,8 @@
         <label for="input-url-link-line-edit" class="input-link-label">URL du site Web :</label><br>
         <div class="input-link-group">
             <input type="text" id="input-url-link-line-edit" class="input-link-line-edit" placeholder="http(s)://...">
-            <button type="button" class="input-link-button" onclick="window.location.href='responsive.html'">Go !</button>
+            <input type="file" id="fileInput" style="display:none">
+            <button type="button" class="input-link-button"  id="browseFileButton">Go !</button>
         </div>
     </div>
 
