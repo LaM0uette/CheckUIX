@@ -5,6 +5,9 @@ if (isset($_POST['input-link-line-edit']) && isset($_POST['input-link-type'])) {
 
     echo "La valeur du champ 1 est : " . $inputLinkUrl . "<br>";
     echo "La valeur du champ 2 est : " . $inputLinkType;
+}else{
+    $inputLinkUrl = "https://doriandevillele.fr";
+    $inputLinkType = "url";
 }
 ?>
 
