@@ -48,12 +48,12 @@
         font-family: Roboto-Black, sans-serif;
         font-size: 1.1vmax;
         width: 12%;
-        background-color: var(--color--h2);
-        color: var(--color--h3);
+        background-color: var(--color--h3);
+        color: var(--color--h2);
     }
     .input-link-button:hover{
         background-color: var(--color--h3);
-        color: var(--color--h2);
+        color: var(--color--h1-third);
     }
 
     .input-link-file-button{
