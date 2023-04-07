@@ -7,7 +7,7 @@
     .input-link-label{
         display: inline-block;
         margin-bottom: 0.1em;
-        font-size: 1.3vmax;
+        font-size: 1.4vmax;
     }
 
     .input-link-group{
@@ -24,15 +24,15 @@
 
     .input-link-line-edit, .input-link-button, .input-link-file-button{
         border: none;
-        min-height: 25px;
-        height: 2.2vmax;
+        min-height: 30px;
+        height: 2.4vmax;
     }
 
     .input-link-line-edit{
         border-top-left-radius: var(--border--radius-h3);
         border-bottom-left-radius: var(--border--radius-h3);
         padding-left: 0.4em;
-        font-size: 1.1vmax;
+        font-size: 1.3vmax;
         width: 100%;
         background-color: var(--color--h1-second);
         color: var(--color--h1-third);
@@ -46,7 +46,7 @@
         border-bottom-right-radius: var(--border--radius-h3);
         cursor: pointer;
         font-family: Roboto-Black, sans-serif;
-        font-size: 1.1vmax;
+        font-size: 1.3vmax;
         width: 12%;
         background-color: var(--color--h3);
         color: var(--color--h2);
