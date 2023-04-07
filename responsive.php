@@ -7,10 +7,8 @@ if (isset($_POST['input-link-line-edit']) && isset($_POST['input-link-type'])) {
     $inputLinkType = "url";
 }
 
-if ($_POST['input-link-line-edit'] == "") { $inputLinkUrl = "https://doriandevillele.fr"; $inputLinkType = "url"; }
-
-echo "La valeur du champ 1 est : " . $inputLinkUrl . "<br>";
-echo "La valeur du champ 2 est : " . $inputLinkType;
+if (isset($_POST['input-link-line-edit']) && $_POST['input-link-line-edit'] == "") {
+    $inputLinkUrl = "https://doriandevillele.fr"; $inputLinkType = "url"; }
 ?>
 
 <!DOCTYPE html>
