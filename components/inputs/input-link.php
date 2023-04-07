@@ -83,13 +83,13 @@ if (!isset($inputLinkButton)) { $inputLinkButton = "Go !"; }
 if (!isset($inputLinkType)) { $inputLinkType = "url"; }
 ?>
 
-<label class="input-link-label" for="input-link-line-edit"><?php echo $inputLinkLabel ?></label>
+<label class="input-link-label" for="input-link-line-edit-<?php echo $inputLinkType ?>"><?php echo $inputLinkLabel ?></label>
 <div class="input-link-group">
     <div class="input-link-input-container">
         <input type="text" id="input-link-line-edit-<?php echo $inputLinkType ?>" class="input-link-line-edit" placeholder=<?php echo $inputLinkPlaceholder ?>>
         <?php if ($inputLinkType == "file") {
             echo '<button class="input-link-file-button" id="inputLinkFileButton">
-            <img src="/assets/svg/utils/file.svg">
+            <img src="/assets/svg/utils/file.svg" alt="Open file">
         </button>';
         } ?>
     </div>
