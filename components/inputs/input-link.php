@@ -106,6 +106,9 @@ if (!isset($inputLinkType)) { $inputLinkType = "url"; }
 if ($inputLinkType == "file") {
     echo '<script>
             let inputLinkType = "' . addslashes($inputLinkType) . '";
+            
+            const inputElement = document.getElementById("input-link-line-edit-file");
+            inputElement.readOnly = true;
 
             document.getElementById("inputLinkFileButton").addEventListener("click", function () {
                 document.getElementById("input-link-file").click();

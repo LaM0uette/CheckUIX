@@ -24,7 +24,7 @@
     <div class="url-link">
         <?php
         $inputLinkLabel = "Fichier .html :";
-        $inputLinkPlaceholder = "C:\\...";
+        $inputLinkPlaceholder = ""; // C:\\...
         $inputLinkType = "file";
         include 'components/inputs/input-link.php'; ?>
     </div>
